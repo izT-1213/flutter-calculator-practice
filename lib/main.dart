@@ -1,9 +1,9 @@
+import 'package:bloc_example2/calculator_params.dart';
 import 'package:bloc_example2/counter_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'home_page.dart';
-import 'operation_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,8 +23,8 @@ class MyApp extends StatelessWidget {
           create: (context) => CounterCubit(),
           child: const MyHomePage(title: 'Calculator')),
         routes: {
-          '/operationPageMultiply': (context) => OperationPage(function: 'Multiply'),
-          '/operationPageDivision': (context) => OperationPage(function: 'Division'),
+          '/operationPageMultiply': (context) => CalculatorParams(),
+          '/operationPageDivision': (context) => CalculatorParams(),
           '/homepage': (context) => MyHomePage(title: 'Calculator')
         }
     );

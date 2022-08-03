@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class OperationPage extends StatefulWidget {
 
-  final String function/*, userInput*/;
-  //final int state;
+  final String function, userInput;
+  final int state;
 
-  const OperationPage({Key? key, required this.function/*, required this.state, required this.userInput*/}) : super(key: key);
+  const OperationPage({Key? key, required this.function, required this.state, required this.userInput}) : super(key: key);
 
   @override
   State<OperationPage> createState() => _OperationPageState();
